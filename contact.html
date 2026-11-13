@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Restaurant Dar El Bey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="entete">
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+    <nav class="navigation">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos</a>
+        <a href="services.html">Services</a>
+        <a href="produits.html">Produits</a>
+        <a href="contact.html">Contact / Inscription</a>
+    </nav>
+    <main>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Vos coordonnees : </legend>
+                <div>
+                    <label for="nom">Nom : </label>
+                    <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="prenom">Prenom : </label>
+                    <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prenom">
+                </div>
+                <div>
+                    <label for="date_naissance">Date de naissance : </label>
+                    <input type="date" id="date_naissance" name="date_naissance">
+                </div>
+                <div>
+                    <label for="email">Adresse email : </label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                </div>
+                <div>
+                    <label for="site_web">Site web : </label>
+                    <input type="url" id="site_web" name="site_web" value="http//:www." placeholder="https://monsite.com">
+                </div>
+                <div>
+                    <label for="code_secret">Code secret : </label>
+                    <input type="password" id="code_secret" name="code_secret" minlength="6" maxlength="20">
+                </div>
+                <div>
+                    <label>Genre : </label>
+                    <input type="radio" id="homme" name="genre" value="Homme" checked>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="Femme">
+                    <label for="femme">Femme</label>
+                </div>
+                <div>
+                    <label for="pays">Pays : </label>
+                    <select id="pays" name="pays">
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="France">France</option>
+                        <option value="Algerie">Algerie</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="telephone">Telephone : </label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="12345678">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informations complementaires : </legend>
+                <div>
+                    <label for="adresse">Adresse postale : </label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                </div>
+                <div>
+                    <label for="code_postal">Code postal : </label>
+                    <input type="text" id="code_postal" name="code_postal" value="1000" maxlength="4">
+                </div>
+                <div>
+                    <label for="semestre">Semestre : </label>
+                    <select id="semestre" name="semestre">
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="S4">S4</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="region">Region preferee : </label>
+                    <select id="region" name="region">
+                        <option value="Tunis">Tunis</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Djerba">Djerba</option>
+                        <option value="Tozeur">Tozeur</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Gouts et centres d'interet : </legend>
+                <div>
+                    <label>Centres d'interet : </label><br>
+                    <input type="checkbox" id="culture" name="interet" value="Culture" checked>Culture
+                    <input type="checkbox" id="gastronomie" name="interet" value="Gastronomie">gastronomie
+                    <input type="checkbox" id="plage" name="interet" value="Plage">plage
+                    <input type="checkbox" id="desert" name="interet" value="Desert">desert
+                    <input type="checkbox" id="histoire" name="interet" value="Histoire">histoire
+                </div>
+                <div>
+                    <label for="niveau_html">Niveau en HTML : </label>
+                    <input type="range" id="niveau_html" name="niveau_html" min="0" max="100" step="10">
+                </div>
+                <div>
+                    <label for="satisfaction">Note de satisfaction : </label>
+                    <input type="number" id="satisfaction" name="satisfaction" min="1" max="10" step="1">
+                </div>
+                <div>
+                    <label for="message">Message / Commentaire : </label>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Votre message"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Photo : </legend>
+                <div>
+                    <label for="photo">Photo de profil</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </div>
+        </form>
+        <p>
+            <a href="index.html">Retour a l'accueil</a>
+        </p>
+    </main>
+    <footer>
+        <p>2026 - Restaurant Dar El Bey - Avenue Habib Bourguiba, Tunis</p>
+    </footer>
+</body>
+</html>
